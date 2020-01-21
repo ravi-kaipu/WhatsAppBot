@@ -24,7 +24,7 @@ class WhatsAppBot():
     #phone number of user
     mynumber = None
 
-    chrome_driverpath = "C:\\Users\\ekairav\\Downloads\\chromedriver_win32\\chromedriver.exe"
+    chrome_driverpath = "chromedriver.exe"
 
     @staticmethod
     def get_current_time():
