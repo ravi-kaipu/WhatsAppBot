@@ -141,25 +141,6 @@ class WhatsAppBot():
         return unread_messages_dict
 
     @staticmethod
-    def scheduled_send(driver, message, schedtime, users=[]):
-        print("Schduled message started executing....")
-        while True:
-            current_time = datetime.now()
-            if (((current_time - schedtime).total_seconds()) >= 0):
-                for user in users:
-                    WhatsAppBot.send_message(driver, user, message)
-                break
-            time.sleep(10)
-
-    @staticmethod
-    def scheduled_message(driver):
-        message = "Happy new year"
-        users = ["Satish Davala"]
-        sched_time = datetime(2019, 12, 31, 10, 41, 00)
-        t = threading.Thread(target=scheduled_send, args=(driver, message, sched_time, users), daemon=True)
-        t.start()
-
-    @staticmethod
     def filter_messages(driver, unread_msgs):
         all_messages = []
         for msg in unread_msgs:
