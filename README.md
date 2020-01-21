@@ -6,4 +6,4 @@ Contact1 --> Unread messages \                                      / chatbot th
 Contact2 --> Unread messages  --> chatbot checks and waits to react --> chatbot thread for Contact2
 Contact3 --> Unread messages /                                      \ chatbot thread for Contact3
 
-TODO: Need to implement NPLK facebook/google to answer the questions preciously.
+TODO: Need to implement NPLK facebook/google to answer the questions preciously
