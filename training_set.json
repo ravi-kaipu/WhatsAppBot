@@ -1,0 +1,71 @@
+{
+        "hi" : {
+            "type": "question",
+            "replies": [
+                "hi"
+                ]
+        },
+
+        "hello" : {
+            "type": "question",
+            "replies": [
+                "hello"
+                ]
+        },
+
+        "hey" : {
+            "type": "question",
+            "replies": [
+                "hey"
+                ]
+        },
+
+        "how are you" : {
+            "type": "question",
+            "replies": [
+                "I am good"
+                ]
+        },
+
+        "what are you doing" : {
+            "type": "question",
+            "replies": [
+                    "Nothing much, what are you doing?"
+            ]
+        },
+
+        "whats up" : {
+            "type": "question",
+            "replies": [
+                "Nothing much"
+            ]
+        },
+
+        "good morning" : {
+            "type": "question",
+            "replies": [
+                "good morning :)"
+            ]
+        },
+
+        "good afternoon" : {
+            "type": "question",
+            "replies": [
+                "good afternoon :)"
+            ]
+        },
+
+        "yes" : {
+            "type": "question",
+            "replies": [
+                "Okay"
+            ]
+        },
+
+        "happy new year" : {
+            "type": "question",
+            "replies": [
+                "I wish you a very good happy new year"
+            ]
+        }
+}
