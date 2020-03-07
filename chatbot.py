@@ -4,15 +4,12 @@ import time
 import re
 
 class ChatBot(object):
-
     def __init__(self):
         self.json_data = None
-
 
     def get_data(self):
         with open("training_set.json") as fp:
             self.json_data = dict(json.loads(fp.read()))
-
 
     @staticmethod
     def filter_words(words):
@@ -36,7 +33,6 @@ class ChatBot(object):
 
     @staticmethod
     def get_rank(question, words):
-
         count = 0
         ft = False
         for i in range(len(words)):
@@ -60,7 +56,6 @@ class ChatBot(object):
                 count += 1
         return count
 
-
     @staticmethod
     def select_question(question, ranks):
         if len(ranks) == 0:
@@ -71,7 +66,6 @@ class ChatBot(object):
         else:
             return ranks[0][1]
 
-
     def choose_answer(self, question, ranks):
         quest = self.select_question(question, ranks)
         if quest:
@@ -80,7 +74,6 @@ class ChatBot(object):
             fields = self.json_data[quest]
             return fields["replies"][0]
         return None
-
 
     def estimate_answer(self, question):
         self.get_data()
@@ -103,8 +96,6 @@ class ChatBot(object):
         if not answer:
             return ""
         return answer.capitalize()
-
-
 
     def run(self):
         self.get_data()
