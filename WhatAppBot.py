@@ -14,6 +14,8 @@ import re
 from datetime import datetime
 from chatbot import ChatBot
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 class WhatsAppBot():
 
@@ -293,7 +295,10 @@ class WhatsAppBot():
 
     @classmethod
     def run(cls, autobot = False):
-        driver = webdriver.Chrome(executable_path=WhatsAppBot.chrome_driverpath)
+        try:
+            driver = webdriver.Chrome(executable_path=WhatsAppBot.chrome_driverpath)
+        except:
+            driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get("https://web.whatsapp.com")
         input("After scan, Press key to start:")
 
