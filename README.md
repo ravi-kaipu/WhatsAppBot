@@ -1,6 +1,6 @@
 # WhatsAppBot
-WhatsAppBot is a chatbot designed to answer unread messages in WhatsApp when owner is busy. <br />
-Chatbot is designed to answer questions that are stored in json (training_set.json) file.
+WhatsAppBot is designed to answer the unread messages in WhatsApp when owner is busy. <br />
+Default questions and answers are stored in json (training_set.json) file.
 
 
 ![WhatsApp desgin](WhatsappDesign.JPG)
